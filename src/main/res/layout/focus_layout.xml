@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:weightSum="1"
+              android:background="@color/blue">
+
+    <TextView
+        android:id="@+id/focus_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center|center"
+        android:layout_weight="0.8"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:maxLength="160"
+        android:text="@string/focus_hint"
+        android:textSize="32sp"
+        android:textColor="@color/light_grey"
+        android:fontFamily="sans-serif-light" />
+
+    <ImageButton
+        android:id="@+id/focus_finished_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_focus_finished"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:layout_weight="0.1"
+        android:background="@android:color/transparent" />
+</LinearLayout>

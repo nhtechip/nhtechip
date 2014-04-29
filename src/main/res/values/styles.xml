@@ -1,0 +1,52 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme - Holo Light. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarStyle">@style/TemakiActionBarStyle</item>
+        <item name="android:editTextStyle">@style/TemakiEditTextStyle</item>
+        <item name="android:actionModeCloseDrawable">@drawable/ic_action_close</item>
+    </style>
+
+    <!-- Application theme - Focus -->
+    <style name="FocusTheme" parent="android:Theme.Holo">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarStyle">@style/TemakiActionBarFocusStyle</item>
+        <item name="android:editTextStyle">@style/TemakiEditTextStyle</item>
+        <item name="android:actionModeCloseDrawable">@drawable/ic_action_close</item>
+    </style>
+
+    <!-- EditText Style -->
+    <style name="TemakiEditTextStyle" parent="android:Widget.EditText">
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <!-- ActionBar Style -->
+    <style name="TemakiActionBarStyle" parent="android:Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/ab_style_holo</item>
+        <item name="android:titleTextStyle">@style/ActionBarStyle.Text</item>
+        <item name="android:icon">@drawable/ic_logo</item>
+    </style>
+
+    <style name="TemakiActionBarFocusStyle" parent="android:Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/ab_style_focus</item>
+        <item name="android:icon">@drawable/ic_logo</item>
+    </style>
+
+    <style name="ActionBarStyle.Text" parent="android:style/TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+</resources>
